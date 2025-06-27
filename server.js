@@ -13,7 +13,7 @@ app.use(express.json());
 connectDB();
 
 // Routes
-const calcRoutes = require('./routes/calculations');
+const calcRoutes = require('./calculations');
 app.use('/', calcRoutes);
 
 const PORT = process.env.PORT || 3001;
