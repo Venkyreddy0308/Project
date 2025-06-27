@@ -102,7 +102,7 @@
       document.getElementById("wordOutput").innerText = "In Words: " + sumWords;
 
       // Send to backend
-      fetch("https://project-1-n99h.onrender.com", {
+      fetch("https://project-1-n99h.onrender.com/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -118,7 +118,7 @@
     }
 
     function fetchLastFive() {
-      fetch("https://project-1-n99h.onrender.com")
+      fetch("https://project-1-n99h.onrender.com/latest")
         .then(res => res.json())
         .then(data => {
           let html = "<h3>Last 5 Calculations</h3><ul style='list-style: none; padding: 0;'>";
